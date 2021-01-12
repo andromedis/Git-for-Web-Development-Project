@@ -27,7 +27,7 @@ Two tags that have required attributes are the <a> anchor tag, and the <img> ima
 
     6. What do we put in the head of our HTML document? 
 
-
+The <head> element of an HTML document is used to add metadata that is not displayed on the page, such as the title of the page for SEO and display within the web browser, CSS <style> tags, or more commonly <link> tags that attach an external CSS stylesheet.
 
     7. What is an id?
 
@@ -67,7 +67,7 @@ An id is referenced with a # followed by the id name: #[id-name]
 
     16. What is the difference between a section and a div
 
-
+A section is a particular section of a webpage's content that is generally not part of the header or footer of the page. It is a semantic tag. A div is a container for any subsection of a page, and can even encompass the entire page's content. It is not a semantic tag.
 
     17. What is CSS used for? 
 
@@ -90,24 +90,98 @@ Classes in CSS are selected by a period followed by the class name: .[classname]
 
     21. How do we select a p element with a single class of “human””?
 
+p.human {
 
+}
 
-    22. What is a parent child selector? When would this be useful? 
+    22. What is a parent child selector? When would this be useful?
+
+A parent child selector selects all of a specific child elements that have a specific parent element. This would be useful when you want to select all <p> that are within <div> elements but not <p> tags that do not have a <div> parent.
+
     23. How do you select all links within a div with the class of sidebar?
+
+.sidebar a {
+
+}
+
     24. What is a pseudo selector?
+
+A pseudo selector is used to select elements that are in a particular state, such as link elements that the user is hovering over, and style them only for that state:
+a:hover {
+  color: white;
+}
+
     25. What do we use the change the spacing between lines?
+
+Change the spacing between lines with the line-height property.
+
     26. What do we use to change the spacing between letters?
+
+Change the spacing between letters with the letter-spacing property.
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+CAPITALS, use text-transform: uppercase;
+lowercase, use text-transform: lowercase;
+Capitalize, use text-transform: capitalize;
+
     28. How do I add a 1px border around my div that is dotted and black?
+
+div {
+  border: 1px dotted black;
+}
+
     29. How do I select everything on the page? 
+
+* {
+
+}
+
     30. How do I write a comment in CSS?
+
+/* comment text here */
+
     31. How do I find out what file I am in, when I am using the command line? 
+
+Use the pwd command.
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+
+Use the ls command.
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+Use the rm [filename] command. You need to be careful doing this because it does not ask for confirmation that you actually want to delete the file, and you could lose important work or data.
+
     34. Why should I use version control? 
+
+Version control is useful because it helps you keep track of different versions of code as you make changes. That lets multiple people work on the same code at once and then merge their work together, and lets you roll back to a previous version if there are issues with new changes.
+
     35. How often should I commit to github?
+
+You should commit locally any time you make a significant change to your project. You should push to github any time you want to publish your current version to the internet.
+
     36. What is the command we would use to push our repo up to github? 
+
+git push -u origin [branch-name]
+
     37. Walk me through Lambda's git flow. 
+
+Fork the repository on Github.
+Clone your fork to your computer with the command:
+git clone [repository-link]
+Enter the local repo with the command:
+cd [repository-link]
+Create your own branch with the command:
+git checkout -b [firstname]-[lastname]
+Add or change files in the repo to work on your project.
+Locally commit changes with the commands:
+git add .; git commit -m "message"
+Push committed changes to the Github repo with the command:
+git push -u origin [branch-name]
+Go to the forked repo on Github, click master/main and then [firstname]-[lastname] from the dropown, then click "new pull request".
+Change the "base repository" dropdown to have your forked version, then click "create pull request".
+
 
 
 Stretch Questions
