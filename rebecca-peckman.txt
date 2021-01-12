@@ -1,0 +1,120 @@
+Part 2 Codepen:
+
+https://codepen.io/rebeccapeckman/pen/YzGJEbe
+
+
+Part 2 Questions
+
+    1. What is Semantic HTML?
+
+Semantic HTML is HTML that both formats content within tags and whose tag names have meanings that describe the underlying structure of the content.
+ 
+    2. What is HTML used for?
+
+HTML is used to add formatting and structure to a webpage so that it will be displayed a certain and consistent way within any particular web browser.
+
+    3. What is an attribute and where do we put it? 
+
+An attribute is a modifier to a particular HTML tag that gives that tag more information. It is placed within the <> brackets, after the tag name and a space, or after a previous attribute's name and a space.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+The h1 tag is used to specify the largest heading within the page, or the title of the page's content. It should only be used once in any page.
+
+    5. Name two tags that have required attributes
+
+Two tags that have required attributes are the <a> anchor tag, and the <img> image tag. The <a> tag requires the href attribute used to create a link. The <img> tag requires the src and alt attributes, describing the path to the image intended for display, and text that will be displayed if the image cannot be.
+
+    6. What do we put in the head of our HTML document? 
+
+
+
+    7. What is an id?
+
+An id is a unique identifier that is assigned to a single html element within it's tag.
+
+    8. What elements can I add an id to? 
+
+The id attribute is a global attribute, and can be added to any element.
+
+    9. How many times can I use the same id on a page?
+
+Any specific id can only be used once on a page.
+
+    10. What is a class? 
+
+A class is an identifier for a particular type of HTML element that can be used over many different elements that need to be grouped and displayed similarly.
+
+    11. What elements can I add a class to? 
+
+The class attribute is a global attribute, and can be added to any element.
+
+    12. How many times can I use the same class on a page? 
+
+The same class can be used an infinite number of times on a page.
+
+    13. How do I get my link to open in a new tab?
+
+You can force the <a> tag to open its in a new tab by adding the target="_blank" attribute to the tag.
+
+    14. What is the alt attribute in the image tag used for? 
+
+The alt attribute in the <img> tag is used to add text that will be displayed if the image cannot be displayed for any reason.
+
+    15. How do I reference an id?
+
+An id is referenced with a # followed by the id name: #[id-name]
+
+    16. What is the difference between a section and a div
+
+
+
+    17. What is CSS used for? 
+
+CSS is used to take the content that has been sectioned and structured with HTML and format the aesthetics of how it will be displayed.
+
+    18. How to we select an element? Example - every h2 on the page
+
+An element is selected with its name, followed by a space and brackets containing the property:value pairs of its styling:
+h2 {
+  color: green;
+}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+A class can be used for any number of elements in a page, while an id can only be used for one. A class might be added to elements that are all images that should be displayed the same way. An id should be added to a single element that needs to be specifically referenced, such as a location name that will be used in Javascript code on the page.
+
+    20. How do we select classes in CSS?
+
+Classes in CSS are selected by a period followed by the class name: .[classname]
+
+    21. How do we select a p element with a single class of “human””?
+
+
+
+    22. What is a parent child selector? When would this be useful? 
+    23. How do you select all links within a div with the class of sidebar?
+    24. What is a pseudo selector?
+    25. What do we use the change the spacing between lines?
+    26. What do we use to change the spacing between letters?
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    28. How do I add a 1px border around my div that is dotted and black?
+    29. How do I select everything on the page? 
+    30. How do I write a comment in CSS?
+    31. How do I find out what file I am in, when I am using the command line? 
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    34. Why should I use version control? 
+    35. How often should I commit to github?
+    36. What is the command we would use to push our repo up to github? 
+    37. Walk me through Lambda's git flow. 
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+
